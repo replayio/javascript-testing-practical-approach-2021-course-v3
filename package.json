@@ -11,6 +11,7 @@
     "// CYPRESS ///////////": "",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "cy:run:replay": "cypress run --browser \"Replay Firefox\"",
     "cy:open:ct": "cypress open-ct",
     "cy:run:ct": "cypress run-ct",
     "// REALWORLD ///////////": "",
@@ -45,6 +46,7 @@
   "homepage": "https://github.com/NoriSte/javascript-testing-practical-approach-2021-course-v3#readme",
   "devDependencies": {
     "@cypress/react": "^5.12.0",
+    "@replayio/cypress": "^0.2.13",
     "@testing-library/cypress": "8.0.2",
     "cross-env": "7.0.3",
     "cypress": "^9.2.0",

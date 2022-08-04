@@ -22,6 +22,7 @@
 // }
 
 const { startDevServer } = require('@cypress/vite-dev-server')
+const cypressReplay = require("@replayio/cypress")
 
 const { defineConfig } = require('vite')
 const reactPlugin = require('@vitejs/plugin-react')
@@ -34,7 +35,8 @@ const reactPlugin = require('@vitejs/plugin-react')
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-
+  cypressReplay.default(on, config);
+  
   on('dev-server:start', options => {
     return startDevServer({
       options,
