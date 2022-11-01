@@ -3,5 +3,6 @@
   "testFiles": "**/*spec.{js,jsx,ts,tsx}",
   "componentFolder": "components",
   "screenshotOnRunFailure": false,
-  "video": false
+  "video": false,
+  "experimentalInteractiveRunEvents": true
 }
