@@ -11,7 +11,7 @@
     "test:everything": "npm run realworld:cy && npm run run:exercises",
     "test:everything:replay": "npm run realworld:cy:replay && npm run run:exercises:replay",
     "test:e2e:replay": "npm run realworld:cy:replay && npm run exercises:replay:e2e",
-    "test:replay": "start-server-and-test realworld:start http://localhost:4100 test:e2e:replay",
+    "test:replay": "start-server-and-test realworld:start http://localhost:4100 exercises:replay:e2e",
     "// CYPRESS ///////////": "",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
@@ -34,7 +34,7 @@
     "exercises:unit": "npm run cy:run -- --spec \"cypress/integration/exercises/5-unit-tests/*.solution.*\"",
     "// REPLAY EXERCISES ///////////": "",
     "run:exercises:replay": "npm-run-all -s exercises:replay:**",
-    "exercises:replay:e2e": "npm run cy:run:replay -- --spec \"cypress/integration/exercises/1-e2e-tests/*\"",
+    "exercises:replay:e2e": "npm run cy:run:replay -- --spec \"cypress/e2e/exercises/1-e2e-tests/*\"",
     "exercises:replay:ui-integration": "npm run cy:run:replay -- --spec \"cypress/integration/exercises/2-ui-integration-tests/*.solution.*\"",
     "exercises:replay:unit": "npm run cy:run:replay -- --spec \"cypress/integration/exercises/5-unit-tests/*.solution.*\""
   },
