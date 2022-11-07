@@ -29,7 +29,7 @@
  * - A bad test is worse then not having it
  */
 
-context('The sign up page', () => {
+ context('The sign up page', () => {
   beforeEach(() => {
     // adapt the viewport, allows the instructor to have more vertical windows when sharing the screen
     cy.viewport(600, 900)
